@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title= title
+    link(rel='stylesheet', href='/css/bootstrap.min.css', type='text/css')
+  body
+    .container
+      block content
+    script(src='/socket.io/socket.io.js')
+    script(src='/js/jquery.min.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/television.js')
+    script(src='/js/script.js')

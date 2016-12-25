@@ -1,0 +1,23 @@
+{
+  "name": "television.js",
+  "version": "0.0.1",
+  "description": "real-time video synchronization",
+  "main": "app.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "morgan": "^1.7.0",
+    "pug": "^2.0.0-beta6",
+    "socket.io": "^1.7.2"
+  },
+  "private": true,
+  "repository": "varanauskas/television.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tadas Varanauskas <t.varanauskas@tada5.com> (https://www.tada5.com)",
+  "license": "MIT"
+}

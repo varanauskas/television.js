@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  .page-header
+    h1 television.js 
+      small real-time video synchronization
+  .input-group
+    input(type='text', placeholder='Video URL', data-television='source').form-control
+    span.input-group-btn
+      button.btn.btn-default(type='button', aria-label='Open', data-television='media', data-television-action='open')
+        span.glyphicon.glyphicon-folder-open(aria-hidden='true')
+  .row
+    video(data-television='player', preload='auto').col-xs-12
+  .btn-group(role='group', aria-label='Video Controls')
+    button.btn.btn-default(type='button', aria-label='Play', data-television='media', data-television-action='play')
+      span.glyphicon.glyphicon-play(aria-hidden='true')
+    button.btn.btn-default(type='button', aria-label='Pause', data-television='media', data-television-action='pause')
+      span.glyphicon.glyphicon-pause(aria-hidden='true')
+  
